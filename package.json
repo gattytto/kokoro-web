@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rm -rf ./build && npm run openapigen && vite build",
     "build:static": "ADAPTER=static npm run build",
-    "dev": "npm run openapigen && vite dev --host 0.0.0.0",
+    "dev": "npm run openapigen && vite dev --host ::",
     "preview": "npm run openapigen && vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
